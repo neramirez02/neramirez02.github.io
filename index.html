@@ -1,55 +1,207 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <style>
-      #main {
-        background: url(http://hdwyn.com/wallpaper_gray/gray_background_texture_spots_faded_hd-wallpaper-48638.jpg); 
-      }  
-      h1 {
-        padding-top: 10px;
-      }
-      .red {
-       color: rgb(200, 0, 0);
-      }
-      #navbar {
-        color: rgb(255, 255, 255);
-        background-color: rgb(235, 0, 0);
-      }
-      a {
-        color: rgb(255, 255, 255); 
-      }
-      body {
-       background-color: rgb(200, 200, 200); 
-      }
-    </style>
-  </head>  
-  <body>  
-    <div id= "navbar">
-      <ul>
-        <li><a href= "./index.html">Home</a></li> 
-        <li><a href= "./contact.html">Contact</a></li>
-        <li><a href= "./blog.html">Blog</a></li>
-      </ul>
+<head>
+  <title>Home</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background: url(http://hdwyn.com/wallpaper_gray/gray_background_texture_spots_faded_hd-wallpaper-48638.jpg);
+    }
+    
+    .nav li {
+      line-height: 40px;
+      padding:20px;
+      list-style: none;
+      display: inline-block;
+      background-color: white;
+    }
+
+    /* Select all child links in a nav element */
+    .nav a {
+      text-decoration: none;
+    }
+
+    .navbar-outside {
+      display:block;
+      background-color: rgb(200, 0 , 0);
+      height:80px;
+    }
+
+    .navbar {
+      display:block;
+      background-color: rgb(235, 0, 0);
+      height:80px;
+      margin:0 auto;
+      min-width:600px;
+      max-width:800px;
+    }
+
+    .navigation li {
+      padding: 30px 15px;
+      list-style: none;
+      text-decoration: none;
+      float:left;
+      height: 20px;
+    }
+
+    .navigation li a {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .navigation li:hover {
+      background-color: rgb(160, 160, 160);
+    }
+    
+    .active {
+        background-color: rgb(120, 120, 120);
+        color: white;
+    }
+    
+    .footer{
+      min-width:600px;
+      max-width:800px;
+      margin:0 auto;
+      background-color: rgb(240, 0, 0);
+      height:50px;
+      clear:both;
+    }
+    
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: rgb(40, 40, 40);
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: rgb(255, 0, 0);
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      background-image: url("./img/Car.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
     </div>
-    <div id= "main">
-      <h1>Nestor Ramirez</h1>
-      <p class= "red">Founding Student at Alpha Cindy Avitia</p>
-      <div class= "image">
-        <a href= "./img/Car.jpg">
-          <img src="./img/Car.jpg" width="650" height="425">
-        </a>
-      </div>
-      
-      <h2>Where I'm From</h2>
-      <p class= "red">I was borned and raised in San Jose. I like to hang out with my friends and be with my family members.<br>
-      My favorite subject is Math because I feeled challenged and I can get help from my teachers.</p>
-      <h2> What I Do Now</h2>
-      <p class= "red">I am still learning on coding and how to make the websites more fancy to the modern websites. I am <br>
-      a 9th Founding Student at Alpha Cindy Avitia High School and my Computer Science Teacher, Mr. Yoho, <br>
-      has taught me how to do mark up so far. These codings will help me out in the future.</p>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <h1 class="main-title">Nestor's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">I was borned and raised in San Jose. I like to hang out with my friends and be with my family members. My favorite subject is Math because I feeled challenged and I can get help from my teachers.
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info">I am still learning on coding and how to make the websites more fancy to the modern websites. I am a 9th Founding Student at Alpha Cindy Avitia High School and my Computer Science Teacher, Mr. Yoho, has taught me how to do mark up so far. These codings will help me out in the future.
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
     </div>
     
-  </body>
+    
+
+</body>
 </html>
