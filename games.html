@@ -2,7 +2,7 @@
 <html>
 <head>
   <!-- TODO: Update your portfolio page title -->
-  <title>Portfolio</title>
+  <title>Games</title>
   
   <!-- Linked Stylesheet (Controls Navbar and Footer) -->
   <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -11,7 +11,7 @@
   /************  DO NOT TOUCH ANY OF THE CSS BELOW ***************/
 
     html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    h3, h4, h5, h6, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
     small, strike, strong, sub, sup, tt, var,
@@ -85,7 +85,7 @@
       height:80px;
       margin:0 auto;
       min-width:600px;
-      max-width:800px;
+      max-width:1200px;
     }
 
     .navigation li {
@@ -112,7 +112,7 @@
     
     .footer{
       min-width:600px;
-      max-width:800px;
+      max-width:1200px;
       margin:0 auto;
       background-color: rgb(240, 0, 0);
       height:50px;
@@ -136,21 +136,20 @@
     }
 
     #carousel {
-      background-color: rgb(140, 140, 140);
+      background-color: rgb(160, 160, 160);
       padding:15px;
     }
 
 
     body {
       font-family: Georgia, serif;
-      background-color:#C2C2C2;
     }
 
     .main {
       display:block;
       clear: left;
       min-width: 600px;
-      max-width: 800px;
+      max-width: 1200px;
       height:100%;
       margin:0 auto;
     }
@@ -199,68 +198,56 @@
       font-size: 0.8em;
       margin: 20px;
     }
-
-
+    
+    .image {
+      float: right;
+      font-style: italic;
+      color: rgb(200, 0, 0);
+    }
+    
+    .red {
+        color: rgb(220, 0, 0);
+    }
+    
+    h2 {
+        color: rgb(0, 0, 0);
+    }
+    
   </style>
 </head>
+
+<!-- Insert this code before your </body> tag -->
+<script src="//static.miniclipcdn.com/js/game-embed.js"></script>
+
 <body>
     <div class="navbar">
         <ul class="navigation">
             <!-- TODO: Ensure that your Navbar is correct -->
             <li><a href="./index.html">Home</a></li>
-            <li class="active"><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./interests.html">Interests</a></li>
-            <li><a href="./games.html">Games</a></li>
+            <li class="active"><a href="./games.html">Games</a></li>
         </ul>
     </div>
 
   <div class="main">
     <div id="carousel">
-      <h2>My Work</h2>
-      <!-- The div below shows an Embedded Scratch Project -->
-      <!-- TODO: Update for your Maze Game -->
-      
-      <div class="grid">
-        <a href="./create_a_band.html" target="_blank"><img src="./img/portfolio/design_a_band/albumcover.png" alt="Design A Band - Challenge 5" width="350"></a>
-        <p><a href="./create_a_band.html" target="_blank">Design A Band</a></p>
-      </div>
-      
-      <div class="grid">
-        <iframe allowtransparency="true" width="350" height="300" src="//scratch.mit.edu/projects/embed/87539522/?autostart=false" frameborder="0" allowfullscreen></iframe>
-        <p><a href="https://scratch.mit.edu/projects/87539522/" target="_blank">Maze Game</a></p>
-      </div>
-      
-      <!-- The div below is a screenshot of a document that you can click on to get to the document-->
-      <!-- TODO: Update for your Project: Shooting Star -->
-      <div class="grid">
-        <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-whats-for-dinner/4695785057157120" target="_blank"><img src="./img/portfolio/project_what's_for_dinner.png" alt="Project What's For Dinner?" width="350"></a>
-        <p><a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-whats-for-dinner/4695785057157120" target="_blank">Project What's For Dinner?</a></p>
-      </div>
-      
-      <div class="grid">
-        <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-shooting-star/4554463631507456" target="_blank"><img src="./img/portfolio/project_shooting_star.png" alt="Project Shooting Star" width="350"></a>
-        <p><a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-shooting-star/4554463631507456" target="_blank">Project Shooting Star</a></p>
-      </div>
-      
-      <div class="grid">
-        <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-fish-tank/5268494657912832" target="_blank"><img src="./img/portfolio/project_fish_tank.png" alt="Project Fish Tank" width="350"></a>
-        <p><a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-fish-tank/5268494657912832" target="_blank">Project Fish Tank</a></p>
-      </div>
-      
-      <!-- The div below is an example of a linked Google Doc -->
-      <!-- TODO: Update for your Algebra Challenge 2 (The fish tank one) -->
-      <div class="grid">
-        <iframe src="https://docs.google.com/document/d/1-J7Sc32u71qgzViOg_W0WDM2Sm4ZKcV3Bqmh-Gpnydo/pub?embedded=true" height = 300 width = 350></iframe>
-        <p><a href="https://docs.google.com/document/d/1-J7Sc32u71qgzViOg_W0WDM2Sm4ZKcV3Bqmh-Gpnydo/pub" target="_blank">Algebra Q2 Challenge</a></p>
-      </div>
-      
-      <div class="grid">
-        <iframe src="https://docs.google.com/document/d/1I7XPl29MqF5Dw4WZ-QJgkCJULKuTQ2qwCGMKMOuhtFM/pub?embedded=true" height = 300 width = 350></iframe>
-        <p><a href="https://docs.google.com/document/d/1I7XPl29MqF5Dw4WZ-QJgkCJULKuTQ2qwCGMKMOuhtFM/pub" target="_blank">Algebra Q3 Challenge</a></p>
-      </div>
-      
-      <!-- TODO: Add more div class="grid" elements for your other Khan Academy Projects and Algebra Challenges -->
+        
+        <h1>Please zoom out to 67% for the best experience</h1>
+        <br>
+        <hr>
+        <h1 align="center">Agario</h1>
+        
+        <!-- Place this code where you'd like the game to appear -->
+        <div class="miniclip-game-embed" data-game-name="agar-io" data-theme="0" data-width="1100" data-height="1000" data-language="en" width="800" height="800" align="center"><a href="http://www.miniclip.com/games/agar-io/">Play Agar.io</a></div>
+        
+        <br>
+        <h1 align="center">8 Ball Pool</h1>
+        
+        <div class="miniclip-game-embed" data-game-name="8-ball-pool-multiplayer" data-theme="0" data-width="750" data-height="520" data-language="en" width="800" height="800" align="center"><a href="http://www.miniclip.com/games/8-ball-pool-multiplayer/">Play 8 Ball Pool</a></div>
+        
+        
     </div>
   </div>
   
