@@ -2,7 +2,7 @@
 <html>
 <head>
   <!-- TODO: Update your portfolio page title -->
-  <title>Portfolio</title>
+  <title>Interests</title>
   
   <!-- Linked Stylesheet (Controls Navbar and Footer) -->
   <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -12,7 +12,7 @@
 
     html, body, div, span, applet, object, iframe,
     p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
+    abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
     small, strike, strong, sub, sup, tt, var,
     b, u, i, center,
@@ -199,12 +199,91 @@
       font-size: 0.8em;
       margin: 20px;
     }
+    
+    div {
+      background-color: red;
+      position: relative;
+      animation-name: moving;
+      animation-duration: 10s;
+    }
 
-
+    @-webkit-keyframes moving {
+      0%   {background-color:red; left:0px; top:0px;}
+      10%  {background-color:orange; left:200px; top:0px;}
+      20%  {background-color:yellow; left:200px; top:200px;}
+      30%  {background-color:green; left:0px; top:200px;}
+      50% {background-color:blue; left:0px; top:0px;}
+    }
+    
+    h1 {
+      color: white;
+      animation-name: colors;
+      position: relative;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    
+    a {
+      color: white;
+    }
+    
+    #red:hover {
+      color: red;
+    }
+    
+    #red1 {
+      color: red;
+    }
+    
+    #blue:hover {
+      color:#00A2FF;
+    }
+    
+    #blue1 {
+      color:#00A2FF;
+    }
+    
+    @keyframes colors {
+      0%   {color:red;}
+      10%  {color:orange;}
+      20%  {color:yellow;}
+      30%  {color:green;}
+      50% {color:#00ffff;}
+      60% {color:purple;}
+      70% {color:#ff69b4;}
+      80% {color:rgb(100, 100, 100);}
+      90% {color:black;}
+      100% {color:white;}
+    }
+    
+    #toon-link {
+      text-decoration: underline;
+    }
+    
+    #little-mac {
+      text-decoration: underline;
+    }
+    
+    #toon-link:hover:after {
+      content: url(./img/interests/toon_link.jpg);
+      position:absolute;
+      left:540px;
+      top:410px;
+    }
+    
+    #little-mac:hover:after {
+      content: url(./img/interests/little-mac.jpg);
+      position:absolute;
+      left:645px;
+      top:410px;
+    }
+    
   </style>
+  
+  <style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), progress !important;}</style><a href="http://www.cursors-4u.com/cursor/2005/05/04/sym46.html" target="_blank" title="The Infamous Middle Finger"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="The Infamous Middle Finger" style="position:absolute; top: 0px; right: 0px;"/></a>
+
+  
 </head>
-
-
 
 <body>
     <div class="navbar">
@@ -223,10 +302,51 @@
             <h1>My Interests</h1>
             <hr>
             <br>
+            <p>Hey everyone, welcome to my page where I wrote things that are my interests and my favorite things. A couple of things I like and enjoy are <u><a href= "#video-games">video games</a></u>, biking, and watching movies. Below, you will ready and see things that I enjoy.</p>
+            <br>
+            <h2 id= "video-games">Video Games</h2>
+            <br>
+            <p>I love video games. The first handheld console I got was a Nintendo DS Lite with New Super Mario Bros., which I was like 6 years old. From there, I started to have a GameCube, PS3, GameBoy, 3DS, and finally a Xbox One. There are many games that I enjoyed playing but my two favorite games are <a id= "red" href="http://smashbros.com/us/">Super Smash Bros.</a> and <a id="blue" href= "https://www.fallout4.com">Fallout 4</a>.</p>
+            <br>
+            <h3 id="red1">Super Smash Bros.</h3>
+            <br>
+            <p>
+              I've had this game since when it first released. I played it non-stop for a week, getting all characters but also the trophies of the characters.
+              My two favorite characters as I played in te game are <a id="toon-link">Toon Link</a> and <a id="little-mac">Little Mac</a>. I used both of them
+              in the Smash Tournament of the AV Club from my high school and it brought me to the finals of the tournament. There was two brackets, one for the regular game and
+              the other for the loser brackets, basically for them to redeem themselves. It's a really fun game when it comes to playing with friends or battling other people online,
+              but mostly battling friends so you can talk smack in front of them and roast them. 
+              
+            </p>
+            <br>
+            <h3 id="blue1">Fallout 4</h3>
+            <br>
+            <p>
+              I also got this game when it first released. It's a role-playing game where the game takes place in Boston and I can roam to any part of the game, whether if I'm doing 
+              a quest or not. In the game, I can also control the story, whether if I would like to do a quest or do a different quest. It's not like Call Of Duty or Metro Last Night
+              that already make the story and have to complete it in that order. I can simply decide if I would like to take the quest or not, since I can go back to it. However, the decisions
+              I take on main quests can drive the storyline to different things and might cancel out a different quest, since in the game there are factions. In the game, there
+              is an extraordinary plot that takes in the future, where atomic bombs fell into cities and been survivors from the bombs. And the the thing that I mostly enjoy about to game is that
+              I can kill and blow up people, animals, and creatures in many different ways, especially in V.A.T.S. since I could kill them in slow motion with all the blood spreading. 
+            </p>
+            <br>
+            <h2 id="biking">Biking</h2>
+            <br>
+            <p></p>
             
-            <p>Hey everyone, </p>
+            <h2 id="watching-movies">Watching Movies</h2>
             
+            <h3>Deadpool</h3>
             
+            <video controls src="./Deadpool.mp4" width="775"></video>
+            
+            <br>
+            
+            <h3>The Good Dinosaur</h3>
+            
+            <video controls src="./The Good Dinosaur.mp4" width="775"></video>
+            
+            <a href="#top"><h3 align="center">Back To Top</h3></a>
         </div>
         
     </div>
