@@ -124,7 +124,7 @@
       padding:5px;
       color:white;
       font-family: Georgia, serif;
-      background: url(http://hdwyn.com/wallpaper_gray/gray_background_texture_spots_faded_hd-wallpaper-48638.jpg);
+      background: url(./wallpaper.jpg);
     }
 
     .grid {
@@ -223,6 +223,27 @@
       animation-iteration-count: infinite;
     }
     
+    h5 {
+      color: white;
+      animation-name: name;
+      position: relative;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes name {
+      0%   {color:red;}
+      10%  {color:orange;}
+      20%  {color:yellow;}
+      30%  {color:green;}
+      50% {color:#00ffff;}
+      60% {color:purple;}
+      70% {color:#ff69b4;}
+      80% {color:rgb(100, 100, 100);}
+      90% {color:black;}
+      100% {color:white;}
+    }
+    
     a {
       color: white;
     }
@@ -272,32 +293,54 @@
       text-decoration: underline;
     }
     
+    #bike {
+      text-decoration: underline;
+    }
+    
+    #x-men {
+      text-decoration: underline;
+    }
+    
     #toon-link:hover:after {
       content: url(./img/interests/toon_link.jpg);
       position:absolute;
       left:560px;
-      top:441px;
+      top:510px;
     }
     
     #little-mac:hover:after {
       content: url(./img/interests/little-mac.jpg);
       position:absolute;
       left:650px;
-      top:441px;
+      top:510px;
     }
     
     #gilroy:hover:after {
       content: url(./img/interests/Gilroy.png);
       position:absolute;
       left:50px;
-      top:465px;
+      top:535px;
     }
     
     #pip-boy:hover:after {
-      content: url(./img/interests/pip-boy.jpg);
+      content: url(./img/interests/pipboy.jpg);
       position:absolute;
-      left:102px;
-      top:258px;
+      left:160px;
+      top:385px;
+    }
+    
+    #bike:hover:after {
+      content: url(./img/interests/6ku_bike.jpg);
+      position:absolute;
+      left:150px;
+      top:560px;
+    }
+    
+    #x-men:hover:after {
+      content: url(./img/interests/x-men-apocalypse.jpg);
+      position:absolute;
+      left:250px;
+      top:870px;
     }
     
   </style>
@@ -322,13 +365,20 @@
     <div class = "main">
         <div id = "carousel">
             <h1>My Interests</h1>
+            <h5>Nestor Ramirez</h5>
             <hr>
             <br>
-            <p>Hey everyone, welcome to my page where I wrote things that are my interests and my favorite things. A couple of things I like and enjoy are <u><a href= "#video-games">video games</a></u>, biking, and watching movies. Below, you will ready and see things that I enjoy.</p>
+            <p>
+              Hey everyone, welcome to my page where I wrote things that are my interests and my favorite things. A couple of things I like and enjoy are video games, biking, and watching movies. Below, you will ready and see things that I enjoy.
+            </p>
             <br>
             <h2 id= "video-games">Video Games</h2>
             <br>
-            <p>I love video games. The first handheld console I got was a Nintendo DS Lite with New Super Mario Bros., which I was like 6 years old. From there, I started to have a GameCube, PS3, GameBoy, 3DS, and finally a Xbox One. There are many games that I enjoyed playing but my two favorite games are <a id= "red" href="http://smashbros.com/us/">Super Smash Bros.</a> and <a id="blue" href= "https://www.fallout4.com">Fallout 4</a>.</p>
+            <p>
+              I love video games. The first handheld console I got was a Nintendo DS Lite with New Super Mario Bros., which I was like 6 years old. From there, I started to have a GameCube, PS3, GameBoy,
+              3DS, and finally a Xbox One. I've been playing video games for 9 years and probably still continue to play games. It's really fun for me since I usually got bored when I was little and always did my homework quick and had so much time to spare.
+              There are many games that I enjoyed playing but my two favorite games are <a id= "red" href="http://smashbros.com/us/">Super Smash Bros.</a> and <a id="blue" href= "https://www.fallout4.com">Fallout 4</a>.
+            </p>
             <br>
             <h3 id="red1">Super Smash Bros.</h3>
             <br>
@@ -355,7 +405,7 @@
             <h2 id="biking">Biking</h2>
             <br>
             <p>
-              When it comes to biking, I have a good time riding on the streets, feeling the breeze, and viewing many things as I pass by. One of the reasons that I like to bike is it keeps me active
+              When it comes to <a id="bike">biking</a>, I have a good time riding on the streets, feeling the breeze, and viewing many things as I pass by. One of the reasons that I like to bike is it keeps me active
               so that I won't be at home all day, doing nothing like being at my phone, watching tv, or playing video games. It's a good way to avoid technology for a couple of hours and be outside.
               Another reason I like to bike is I am able to test out my endurance, to see how far I could go until my thighs are hurting like hell and can't walk at all. The furthest I went to a place with
               a friend is going through Morgan Hill and arrive Girloy but also ride back to Morgan Hill. Check out the <a id="gilroy">map</a> to how far it is on bike. Finally, the last reason I like to bike ride
@@ -365,9 +415,15 @@
             </p>
             <br>
             <h2 id="watching-movies">Watching Movies</h2>
+            <br>
+            <p>
+              I love going out to the theatres and watch movies with friends because it's fun and entertaining watching it but also being with friends at the same time. It's nice chilling with friends, everyone all together
+              having a good time. Plus, after the movie, we can go out to walk around the mall. Anothing thing I love to go to the movies is because I can use it as an excuse to get out of other invitions. Sometimes, I have to go
+              to places with my parents but I don't really want to go with them so mostly going to a friend's house or go to watch movies is the best option. The latest movie I've seen is <a id="x-men">X-Men: Apocalypse</a>, which 
+              came out a week ago. It was exciting, interesting, but also funny in a couple of clips. The movie that I am going to see next for sure is Finding Dory, which will be interesting.
+            </p>
             
-            
-            <a href="#top"><h3 align="center">Back To Top</h3></a>
+            <a href="#top"><h4 align="center">Back To Top</h4></a>
         </div>
         
     </div>
